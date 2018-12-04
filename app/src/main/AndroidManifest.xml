@@ -9,33 +9,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        //1.
+
         <activity android:name=".LessonLayout.RelativeLayoutActivity">
-            // Для запуска android RELATIV_Layout
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.LAUNCHER" />
-            </intent-filter>
+
+
         </activity>
         <activity
             android:name=".LessonLayout.TableLayoutActivity"
             android:label="@string/title_activity_table_layout"
             android:theme="@style/AppTheme.NoActionBar">
-            // Для запуска android TableLayoutActivity
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.LAUNCHER" />
-            </intent-filter>
+
+
         </activity>
         <activity
             android:name=".LessonLayout.ScrollLayoutView"
             android:label="@string/title_activity_scroll_view"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" >
 
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <action android:name="android.intent.action.LAUNCHER" />
         </intent-filter>
+
+        </activity>
 
     </application>
 

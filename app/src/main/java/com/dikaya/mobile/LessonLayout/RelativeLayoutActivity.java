@@ -59,6 +59,7 @@ public class RelativeLayoutActivity extends AppCompatActivity {
         txtName.setLayoutParams(txtLayoutParams);
 
 
+        // btn
         RelativeLayout.LayoutParams btnParameters = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         btnParameters.addRule(RelativeLayout.CENTER_HORIZONTAL);
         btnParameters.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
@@ -68,6 +69,7 @@ public class RelativeLayoutActivity extends AppCompatActivity {
 
         layout.addView(lblName);
         layout.addView(txtName);
+        layout.addView(btnSend, btnParameters);
 
         return layout;
 

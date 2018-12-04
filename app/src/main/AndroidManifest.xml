@@ -30,12 +30,13 @@
         <activity
             android:name=".LessonLayout.ScrollLayoutView"
             android:label="@string/title_activity_scroll_view"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <action android:name="android.intent.action.LAUNCHER" />
         </intent-filter>
+
     </application>
 
 </manifest>

@@ -2,4 +2,5 @@
     <string name="app_name">mobile</string>
     <string name="title_activity_table_layout">TableLayoutActivity</string>
     <string name="title_activity_scroll_view">ScrollView</string>
+    <string name="title_activity_constrate_layout">ConstrateLayoutActivity</string>
 </resources>

@@ -13,7 +13,7 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
-import com.dikaya.mobile.R;
+//import com.dikaya.mobile.LessonLayout;
 
 public class TableLayoutActivity extends AppCompatActivity {
 

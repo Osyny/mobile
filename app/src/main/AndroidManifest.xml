@@ -9,14 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LessonLayout.RelativeLayoutActivity"></activity>
+        <activity android:name=".LessonLayout.RelativeLayoutActivity" />
         <activity
             android:name=".LessonLayout.TableLayoutActivity"
             android:label="@string/title_activity_table_layout"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".LessonLayout.ScrollLayoutView"
             android:label="@string/title_activity_scroll_view"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".LessonLayout.ConstraintLayoutLesson"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

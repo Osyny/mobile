@@ -17,16 +17,22 @@
         <activity
             android:name=".LessonLayout.ScrollLayoutView"
             android:label="@string/title_activity_scroll_view"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".LessonLayout.ConstraintLayoutLesson"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".LessonLayout.LessonActivity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".LessonLayout.LessonActivity.ProfileActivity"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.LAUNCHER" />
-            </intent-filter>
+
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <action android:name="android.intent.action.LAUNCHER" />
+                </intent-filter>
+
         </activity>
     </application>
 

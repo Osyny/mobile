@@ -7,9 +7,11 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.dikaya.mobile.R;
 
@@ -61,15 +63,33 @@ public class ProfileActivity extends AppCompatActivity {
             startActivityForResult(intent,REQUEST_DATE);
         });
 
-//        // Country Spiner Combobox
-//        String[] countries = getResources().getStringArray(R.array.countries);
-//
-//        Spinner cmbCountrie = (Spinner)findViewById(R.id.cmbCountry);
-//        // ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.simple_spinner_item, countries);
-//        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.simple_spinner_item, countries);
-//
-//        adapter.setDropDownViewResource((R.layout.support_simple_spinner_dropdown_item));
-//        cmbCountrie.setAdapter(adapter);
+        //Country Spinner Combobox
+        String[] countries = getResources().getStringArray(R.array.countries);
+
+        Spinner cmbCountries = (Spinner)findViewById(R.id.cmbCountry);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.simple_spinner_item,countries);
+
+        adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
+
+        cmbCountries.setAdapter(adapter);
+
+
+        cmbCountries.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+
+
+                String item = (String)adapterView.getItemAtPosition(position);
+
+                Toast.makeText(getApplicationContext(),item,Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
 
 
     }

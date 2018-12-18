@@ -1,8 +1,13 @@
-package com.dikaya.mobile.LessonLayout.LessonActivity.CostumerAdapter;
+package com.dikaya.mobile.LessonLayout.LessonActivity.Fragments;
 
 import java.util.Date;
 
-public class News {
+public interface ISearchNews {
+    String getTopic();
+    Date getDateFrom();
+    Date getDateTo();
+
+class News {
 
     protected String title;
     protected String context;
@@ -32,4 +37,4 @@ public class News {
         this.date = date;
         this.imagePath = imagePath;
     }
-}
+}}
